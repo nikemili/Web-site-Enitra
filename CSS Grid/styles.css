@@ -1,0 +1,41 @@
+body {
+  background: paleturquoise;
+  margin: 10px;
+}
+
+.destination {
+  background: skyblue;
+  text-align: center;
+  margin: 2px;
+  border: 2px;
+  color: #000;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.footer-destination {
+  background-color: grey;
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.content-destination > div > img {
+  width: 500px;
+
+  margin: 10px;
+  padding: 5px;
+
+  grid-column: span 2;
+  grid-row: span 2;
+  grid-gap: 10px;
+
+  display: flex;
+  font-size: 2em;
+  flex-wrap: wrap;
+}
+
+.grid-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}

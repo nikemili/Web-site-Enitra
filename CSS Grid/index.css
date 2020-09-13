@@ -1,0 +1,43 @@
+.flexbox-header {
+  display: flex;
+}
+
+.flexbox-header > div:nth-child(3) {
+  margin-left: auto;
+}
+
+.grid-page {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 50px 500px 50px;
+}
+
+.header {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+}
+
+.header > div:nth-child(3) {
+  margin-left: auto;
+}
+
+.menu {
+  grid-column: 11/ 13;
+  font-family: arial serif;
+
+  display: list-item;
+}
+
+.content {
+  grid-column: 1 / 11;
+  text-align: center;
+}
+
+.footer {
+  grid-column: 1 / -1;
+  display: flex;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+}
